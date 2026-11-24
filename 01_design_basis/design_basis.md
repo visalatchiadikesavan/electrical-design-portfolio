@@ -14,13 +14,20 @@
 - Grid connection: ESO (Lithuanian grid operator) rules
 
 ## 3. Design targets
-- Installed load: about 220 kW
-- Maximum demand: about 150 kW (diversity factor about 0.7)
+- Building installed load: 180 kW
+- Building maximum demand: 126 kW (diversity factor 0.7)
+- EV charging: 4 x 22 kW = 88 kW
+- Total maximum demand: 214 kW
 - Power factor: 0.95 or better
+- Total apparent power: 214 / 0.95 = about 225 kVA
+- Transformer: 250 kVA, loaded to about 90%
+- PV is not counted when sizing the transformer (no output at night)
 - Voltage drop: 3% or less for lighting, 5% or less for other circuits
 - Final circuits must disconnect within 0.4 s in a fault
 - Earth electrode resistance: 10 ohm or less
 - Voltage THD: under 8% (design goal under 5%)
 
-## 4. Open decisions
-- Are the 4 EV chargers (88 kW) included in the 220 kW or added on top?
+## 4. Decisions made
+- EV chargers are added on top of the building load, not included in it
+- Building load was reduced from 220 kW to 180 kW to keep the 250 kVA transformer
+- EV load management is included as protection against overload
